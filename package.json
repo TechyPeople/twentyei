@@ -1,0 +1,25 @@
+{
+  "name": "twentyei",
+  "version": "0.0.2",
+  "description": "Twentyei enhances the Facebook Messenger platform with a variety of useful and fun features.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Sanil Chawla",
+  "license": "MIT",
+  "dependencies": {
+    "cleverbot-api": "^1.0.3",
+    "cleverbot.io": "^1.0.4",
+    "facebook-chat-api": "github:schmavery/facebook-chat-api",
+    "firebase-admin": "^5.5.0",
+    "giphy-api": "^1.2.7",
+    "request": "^2.83.0",
+    "spotify-web-api-node": "^2.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../lib/counter.js"],"names":["db","updateCounter"],"mappings":";;;;;;;AAIA;;IAAYA,E;;;;AAEL,IAAMC,wCAAgB,SAAhBA,aAAgB,GAAM;AAC/B;AACH,CAFM,C,CANP","file":"counter.js","sourcesContent":["/**\n * Created by sanil on 11/20/17.\n */\n\nimport * as db from 'db-functions';\n\nexport const updateCounter = () => {\n    //\n};"]}
