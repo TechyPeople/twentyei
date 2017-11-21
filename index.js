@@ -43,6 +43,8 @@ login(loginOptions, (err, chat) => {
                             let isGroup = !info.isCanonical;
                             db.createThreadDoc(message.threadID, isGroup);
                         });
+
+                        chat.sendMessage("Hi there! I'm Twentyei, and I'm here to make this chat more useful and fun. Tag me (@Twentyei) and send a message to chat with me!")
                     }
                 });
 
