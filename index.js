@@ -11,13 +11,20 @@ const login = require("facebook-chat-api");
 import * as db from "./lib/db-functions";
 import * as twentyei from "./lib/twentyei";
 
-/**
- * Facebook login information
- * @type {{email: *, password: *}}
- */
-const loginOptions = {
-    appState: JSON.parse(fs.readFileSync('./private/appState.json', 'utf8'))
-};
+let loginOptions = {};
+
+checkLoginDetails().then((exists) => {
+    if (exists) {
+        loginOptions = {
+            appState: JSON.parse(fs.readFileSync('./private/appState.json', 'utf8'))
+        };
+    } else {
+        loginOptions = {
+            email: process.env.email,
+            password: process.env.password
+        }
+    }
+});
 
 login(loginOptions, (err, chat) => {
     if (err) return console.error(err);

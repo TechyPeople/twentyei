@@ -4,7 +4,7 @@
   "description": "Twentyei enhances the Facebook Messenger platform with a variety of useful and fun features.",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "start": "./node_modules/.bin/babel-node index.js"
   },
   "author": "Sanil Chawla",
   "license": "MIT",
